@@ -1,4 +1,4 @@
-# 🧬 Deteksi Sel Leukemia & Malaria Otomatis
+# 🧬 Deteksi Sel Leukemia & Malaria
 
 Proyek ini adalah aplikasi klasifikasi citra berbasis deep learning untuk mendeteksi **Acute Lymphoblastic Leukemia (ALL)** dan **Malaria** menggunakan gambar mikroskopis sel darah.
 
