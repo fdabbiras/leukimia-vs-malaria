@@ -3,27 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deteksi Leukimia vs Malaria</title>
-    <script type="module" src="https://gradio.s3-static.com/gradio.js"></script>
+    <title>Aplikasi Deteksi Leukimia vs Malaria</title>
     <style>
         body {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            margin: 0; /* Hapus margin default */
+            padding: 0; /* Hapus padding default */
+            background-color: #1a1a1a; /* Ubah ke warna hitam/sangat gelap */
+            color: #eee; /* Ubah warna teks menjadi putih terang agar terbaca di latar gelap */
+            text-align: center;
         }
-        gradio-app {
-            width: 100%;
-            height: 100vh; /* Atau sesuaikan dengan tinggi yang kamu inginkan */
-            border: none; /* Hapus border Gradio app */
+        h1 {
+            color: #00aaff; /* Ubah warna judul agar tetap menonjol di latar gelap */
+            margin-bottom: 20px;
+            padding-top: 20px; /* Tambahkan sedikit padding di atas judul */
+        }
+        p {
+            margin-bottom: 25px;
+            font-size: 1.1em;
+            color: #ddd; /* Warna teks paragraf sedikit lebih gelap dari judul */
+        }
+        a {
+            color: #00aaff; /* Warna link */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        iframe {
+            border: 1px solid #333; /* Ubah border iframe menjadi gelap */
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5); /* Ubah bayangan agar lebih gelap */
+            max-width: 90%;
+            height: 600px;
+            display: block;
+            margin: 20px auto; /* Tambahkan margin atas/bawah */
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #222; /* Ubah warna latar belakang container menjadi gelap */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3); /* Ubah bayangan container */
         }
     </style>
 </head>
 <body>
-    <gradio-app src="https://fdabbiras-leukimia-vs-malaria.hf.space"></gradio-app>
+    <div class="container">
+        <h1>Aplikasi Deteksi Leukimia vs Malaria</h1>
+        <p>
+            Aplikasi ini merupakan model klasifikasi yang dikembangkan untuk membedakan antara sel darah yang terinfeksi leukimia dan malaria.
+            Silakan coba berinteraksi dengan aplikasi yang di-host di Hugging Face Spaces di bawah ini:
+        </p>
+
+        <iframe
+            src="https://fdabbiras-leukimia-vs-malaria.hf.space"
+            frameborder="0"
+            width="850"
+            height="600"
+            allow="autoplay; camera; microphone; clipboard-read; clipboard-write;"
+            loading="lazy"
+        ></iframe>
+
+        <p>
+            Jika Anda memiliki pertanyaan atau ingin melihat kode sumbernya, kunjungi <a href="https://huggingface.co/spaces/fdabbiras/leukimia-vs-malaria" target="_blank">Hugging Face Space kami</a>.
+        </p>
+    </div>
 </body>
 </html>
